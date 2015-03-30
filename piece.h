@@ -3,20 +3,25 @@
 
 #include <QGraphicsPixmapItem>
 
-class piece : public QObject
+class piece : public QGraphicsPixmapItem
 {   
 public:
     enum couleurPiece { pieceNeutre=0, pieceRond, pieceCroix};
-        explicit Piece();
-        explicit Piece(couleurPiece _couleur, int16_t _x, int16_t _y);
+        explicit piece();
+        explicit piece(couleurPiece _couleur, int16_t _x, int16_t _y);
 
         bool isSelectionnable();
         int16_t x;
         int16_t y;
 
 protected:
-        void mousePressEvent(QGraphicsSceneMouseEvent * event);
-        void mouseMoveEvent
+        //void mousePressEvent(QGraphicsSceneMouseEvent * event);
+        //void mouseMoveEvent(QGraphicsSceneMouseEvent * event);
+
+private:
+    std::vector<QPixmap *> pixmapCollection;
+    couleurPiece couleur;
+
 
 };
 

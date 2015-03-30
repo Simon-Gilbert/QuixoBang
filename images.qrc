@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>../test.jpg</file>
         <file>../animus.png</file>
+        <file>../Pièces Quixo/rond.png</file>
+        <file>../Pièces Quixo/neutre.png</file>
+        <file>../Pièces Quixo/croix.png</file>
     </qresource>
 </RCC>

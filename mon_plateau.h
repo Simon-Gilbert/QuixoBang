@@ -14,6 +14,8 @@ class mon_plateau : public QMainWindow
 public:
     explicit mon_plateau(QWidget *parent = 0);
     ~mon_plateau();
+    int x;
+    int y;
 
 private slots:
     void on_btnQuit_clicked();
